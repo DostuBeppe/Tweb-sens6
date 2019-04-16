@@ -1,0 +1,58 @@
+<div class="fixed-plugin">
+    <div class="dropdown show-dropdown">
+        <a href="#" data-toggle="collapse" data-target="#collapseAggiungi" aria-expanded="false" aria-controls="collapseAggiungi">
+            <i class="fa fa-plus fa-2x"></i>
+        </a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 collapse" id="collapseAggiungi">
+        <div class="card">
+            <div class="card-header card-header-warning">
+                <h4 class="card-title">Aggiungi Materia</h4>
+                <p class="card-category">Inserisci il nome nell'apposita casella di testo</p>
+            </div>
+            <div class="card-body">
+                <div class="form-inline ">
+                    <div class="form-group col-md-6">
+                        <input type="text" id="inputAddSubject" placeholder="Nome" class="form-control w-100">
+                    </div>
+                    <div class="form-group ml-auto mr-0">
+                        <button type="submit" id="buttonAddSubject" class="btn btn-warning pull-right">
+                            Aggiungi
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header card-header-warning">
+                <h4 class="card-title ">Tabella Materia</h4>
+                <p class="card-category">Lista con tutte le informazioni sulle materie presenti</p>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table id="adminTableSubject" class="table">
+                        <thead class=" text-warning">
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Stato</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bodyAdminTableSubject"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/js/admin/subject.js"></script>
+
+

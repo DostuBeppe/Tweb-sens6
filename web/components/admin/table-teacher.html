@@ -1,0 +1,62 @@
+<div class="fixed-plugin">
+    <div class="dropdown show-dropdown">
+        <a href="#" data-toggle="collapse" data-target="#collapseAggiungi" aria-expanded="false" aria-controls="collapseAggiungi">
+            <i class="fa fa-plus fa-2x"></i>
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 collapse" id="collapseAggiungi">
+        <div class="card">
+            <div class="card-header card-header-info">
+                <h4 class="card-title">Aggiungi Docente</h4>
+                <p class="card-category">Inserisci il nome ed il cognome</p>
+            </div>
+            <div class="card-body">
+                <div class="form-inline ">
+                    <div class="form-group col-md-4">
+                        <input type="text" id="inputAddNameTeacher" placeholder="Nome" class="form-control w-100">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="text" id="inputAddSurnameTeacher" placeholder="Cognome" class="form-control w-100">
+                    </div>
+                    <div class="form-group ml-auto mr-0">
+                        <button type="submit" id="buttonAddTeacher" class="btn btn-info pull-right">
+                            Aggiungi
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header card-header-info">
+                <h4 class="card-title ">Tabella Docenti</h4>
+                <p class="card-category">Lista con tutti i dettagli sui Docenti</p>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table id="adminTableTeacher"class="table">
+                        <thead class=" text-info">
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Cognome</th>
+                                <th>Stato</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bodyAdminTableTeacher">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/admin/teacher.js"></script>
